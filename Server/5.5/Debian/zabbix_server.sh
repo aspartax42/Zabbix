@@ -19,8 +19,8 @@ export PATH=$PATH:/sbin
 
 # Récupération de la dernière version de Zabbix
 cd /tmp
-wget https://repo.zabbix.com/zabbix/5.0/debian/pool/main/z/zabbix-release/zabbix-release_5.0-1+$(lsb_release -sc)_all.deb
-dpkg -i zabbix-release_5.0-1+$(lsb_release -sc)_all.deb
+wget https://repo.zabbix.com/zabbix/5.5/debian/pool/main/z/zabbix-release/zabbix-release_5.5-1+debian$(cat /etc/issue | cut -c 18-19)_all.deb
+dpkg -i zabbix-release_5.5-1+debian$(cat /etc/issue | cut -c 18-19)_all.deb
 apt update
 apt -y install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-agent
 

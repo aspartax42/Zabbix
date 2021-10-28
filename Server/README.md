@@ -1,6 +1,6 @@
 # Zabbix-Server
 
-Ce script bash permet l'automatisation de l'installation et de la configuration d'un proxy Zabbix.
+Ce script bash permet l'automatisation de l'installation et de la configuration d'un Serveur Zabbix.
 
 Plusieurs informations sont alors demandées:
 
@@ -14,6 +14,6 @@ Pour récupérer le script, il suffit de faire les commandes suivantes:
 git clone https://github.com/aspartax42/Zabbix.git
 cd Zabbix/Server/
 Choisissez la version que vous souhaitez installer
-Dans notre exemple cd 5.2/Debian
+Dans notre exemple cd 5.5/Debian
 chmod +x zabbix_server.sh
 ./zabbix_server.sh
